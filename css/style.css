@@ -1,0 +1,81 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea); /* Soft Blue Gradient Background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #006064;
+  color: white;
+  padding: 15px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  background-color: #004d40;
+}
+
+/* Button Style */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004d40;
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background-color: #006064;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Simple Animation */
+h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
